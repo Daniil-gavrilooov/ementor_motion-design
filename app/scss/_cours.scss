@@ -1,0 +1,107 @@
+.cours {
+    padding: 120px 0;
+    &__head {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 58px;
+        line-height: 100%;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        padding: 25px 15px;
+        background: #fdfdfd;
+        box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12);
+        border-radius: 10px;
+
+        &-title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            font-feature-settings: "pnum" on, "lnum" on;
+            padding-left: 26px;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: '';
+                left: 0%;
+                top: 0%;
+                width: 16px;
+                height: 18px;
+            }
+        }
+
+        
+    }
+
+    &__content{
+        & .cours__item:nth-child(1) .cours__item-title::before{
+            width: 18px;
+            background-image: url(../images/cours__title-icon\ 1.svg);
+            
+        }
+        & .cours__item:nth-child(2) .cours__item-title::before{
+            height: 16px;
+            background-image: url(../images/cours__title-icon\ 2.svg);
+            
+        }
+        & .cours__item:nth-child(3) .cours__item-title::before{
+            width: 18px;
+            background-image: url(../images/cours__title-icon\ 3.svg);
+            
+        }
+        & .cours__item:nth-child(4) .cours__item-title::before{
+            height: 16px;
+            background-image: url(../images/cours__title-icon\ 4.svg);
+            
+        }
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 130%;
+        font-feature-settings: "pnum" on, "lnum" on;
+        margin-top: 15px;
+        max-width: 240px;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        color: $white;
+        & .section__btn {
+            padding: 20px 46px;
+            background-color: $green;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .cours {
+        &__content {
+            justify-content: center;
+            gap: 30px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .cours {
+        padding: 50px 0;
+        text-align: center;
+        &__title {
+            font-size: 45px;
+        }
+    }
+}
