@@ -40,3 +40,9 @@
         object-fit: cover;
     }
 }
+
+@media (max-width: 1100px) {
+    .cours-info__title{
+        font-size: 40px;
+    }
+}
