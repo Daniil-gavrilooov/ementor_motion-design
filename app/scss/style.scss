@@ -2,3 +2,30 @@
 @import '_reset';
 @import '_mixing';
 
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $mainColor;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.lock {
+    overflow: hidden;
+}
+
+.section__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    padding: 20px 47px;
+    background: $orange;
+    border-radius: 0px 20px;
+}
+
