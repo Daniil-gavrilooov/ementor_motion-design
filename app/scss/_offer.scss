@@ -31,23 +31,28 @@
 }
 
 .offer__two{
-    background-image: url(../images/offer__bg\ 1.jpg);
+    background-image: url(../images/offer__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: $mainColor;
+    padding-top: 232px;
+
     & .offer__inner{
         justify-content: end;
     }
 
-    & .offer__title,
+    & .offer__title{
+        max-width: 332px;
+    }
+
     & .offer__text{
-        max-width: 508px;
+        max-width: 444px;
     }
 
     & .section__btn{
         color: $white;
-        padding: 20px 56px;
+        padding: 20px 68px;
     }
 }
 
@@ -62,9 +67,6 @@
         }
     }
 
-    .offer__two{
-        background-image: url(../images/offer__bg-opacity.jpg);
-    }
 }
 
 @media (max-width: 500px) {
